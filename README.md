@@ -253,6 +253,11 @@ Credenciais default:
 - **Password:** secret
 
 > **IMPORTANTE:** Alterei a password do admin imediatamente após o primeiro login!
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-44-14" src="https://github.com/user-attachments/assets/cfa096bf-3b1a-4aeb-93d9-0281289a9837" />
+<br/>
+<br/>  
 
 ---
 
@@ -266,7 +271,11 @@ No interface web do TheHive (logado como admin@thehive.local / secret):
    - Name: `SOC-Lab`
    - Description: `Laboratório Projeto Final`
    - Cliquei em **Confirm**
-
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-44-06" src="https://github.com/user-attachments/assets/d4c8d507-08e4-4a41-9e6e-3241e79c97ae" />
+<br/>
+<br/>  
 2. **Criar um utilizador org-admin** — dentro da organização SOC-Lab, cliquei em "Add user":
    - Type: **Normal**
    - Login: `labmanager@thehive.local` (tem de ser formato email)
@@ -274,7 +283,12 @@ No interface web do TheHive (logado como admin@thehive.local / secret):
    - Profile: **org-admin**
    - Cliquei em **Confirm**
    - **Definir password:** voltei à lista de utilizadores, cliquei no nome `labmanager@thehive.local` para abrir os detalhes, e cliquei em **Set password** para definir uma password. Sem este passo, não é possível fazer login com este utilizador.
-
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-50-39" src="https://github.com/user-attachments/assets/f7c4a571-b00b-49f9-a07b-8792292f97c2" />
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-52-34" src="https://github.com/user-attachments/assets/d33e6279-c3d2-4588-9d37-6d21ef83420c" />
+<br/>
+<br/>  
 3. **Criar um utilizador para API (Wazuh)** — ainda dentro da organização, cliquei novamente em "Add user":
    - Type: **Service** (utilizadores de serviço são para bots/integrações via API)
    - Login: `wazuh-api@thehive.local`
@@ -283,6 +297,11 @@ No interface web do TheHive (logado como admin@thehive.local / secret):
    - Cliquei em **Confirm**
 
 4. **Gerar API Key** — na lista de utilizadores, cliquei no nome "Wazuh API" para abrir os detalhes do utilizador. Na secção "API Key", cliquei em **Create API Key**, depois em **Reveal** para ver e copiar a chave
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-55-29" src="https://github.com/user-attachments/assets/47fb3e6a-6ca4-4faa-b47e-e7c580c5abf2" />
+<br/>
+<br/>  
 
 > Guardei esta API Key — é necessária no próximo passo.
 
@@ -585,6 +604,16 @@ TheHive alert created: ~123456
 curl -s -H "Authorization: Bearer A_MINHA_API_KEY" \
   http://127.0.0.1:9000/api/v1/alert?range=0-5 | jq .
 ```
+
+Dentro do TheHive já começam a chegar alertas configurados anteriormente, neste caso com integração com VirusTotal para remover ameaças automaticamente usando as capacidades active response do Wazuh configuradas por mim noutro laboratório. Abrindo o alerta, é possível obter mais informações sobre o mesmo, a sua origem, elementos importantes para investigação e triagem e, por fim, importante, criar cases.
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-14-19-22" src="https://github.com/user-attachments/assets/2b888d2a-01ef-447a-937f-b96ee1ec882c" />
+<br/>
+<br/>  
+<img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-14-19-41" src="https://github.com/user-attachments/assets/aea69d0d-398f-4deb-82ff-8be1a7975e8a" />
+<br/>
+<br/>  
 
 ### 4.4 Problemas comuns e soluções
 
