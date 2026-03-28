@@ -6,6 +6,8 @@ Integração do TheHive com o Wazuh para triagem de alertas e criação de casos
 ## Nota sobre Recursos
 
 Com 6 GB de RAM a partilhar entre Wazuh Manager, Cassandra, Elasticsearch e TheHive, tenho margem suficiente para um ambiente de lab funcional e estável. Se no futuro quiser passar para produção ou adicionar o Cortex, devo considerar 8-16 GB.
+Instalado num servidor Ubuntu 24.04, onde já está instalado e configurado o Wazuh Server.
+Actualizado para 2026 e com nova versão do Wazuh. 
 
 
 ## Parte 1 — Instalar TheHive 5 e Dependências
