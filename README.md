@@ -275,7 +275,8 @@ No interface web do TheHive (logado como admin@thehive.local / secret):
 <br/>  
 <img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-44-06" src="https://github.com/user-attachments/assets/d4c8d507-08e4-4a41-9e6e-3241e79c97ae" />
 <br/>
-<br/>  
+  <br/>
+
 2. **Criar um utilizador org-admin** — dentro da organização SOC-Lab, cliquei em "Add user":
    - Type: **Normal**
    - Login: `labmanager@thehive.local` (tem de ser formato email)
@@ -284,11 +285,13 @@ No interface web do TheHive (logado como admin@thehive.local / secret):
    - Cliquei em **Confirm**
    - **Definir password:** voltei à lista de utilizadores, cliquei no nome `labmanager@thehive.local` para abrir os detalhes, e cliquei em **Set password** para definir uma password. Sem este passo, não é possível fazer login com este utilizador.
 <br/>
-<br/>  
+  <br/>
+  
 <img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-50-39" src="https://github.com/user-attachments/assets/f7c4a571-b00b-49f9-a07b-8792292f97c2" />
 <img width="1704" height="878" alt="Windows 10 Marte-2026-03-28-13-52-34" src="https://github.com/user-attachments/assets/d33e6279-c3d2-4588-9d37-6d21ef83420c" />
 <br/>
 <br/>  
+
 3. **Criar um utilizador para API (Wazuh)** — ainda dentro da organização, cliquei novamente em "Add user":
    - Type: **Service** (utilizadores de serviço são para bots/integrações via API)
    - Login: `wazuh-api@thehive.local`
